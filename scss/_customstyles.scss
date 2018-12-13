@@ -3,33 +3,59 @@
 .logo{
   font-size: 1.3rem !important;
 }
+
 .social_icon{
   background: #999999;
   width: 30px;
   line-height: 30px !important;
 }
-.fa-chevron-circle-left{
-  position: absolute;
-  bottom: 10%;
-  left: 40%;
-}
-.fa-chevron-circle-right{
-  position: absolute;
-  bottom: 10%;
-  left: 60%;
-}
-.mynav{
-  width: 100vh;
-}
 
-@include media-breakpoint-up(sm) {  }
+//.fa-chevron-circle-left{
+//  position: absolute;
+//  bottom: 30%;
+//  left: 10%;
+//}
+//.fa-chevron-circle-right{
+//  position: absolute;
+//  bottom: 30%;
+//  right: 10%;
+//}
+
+
+@include media-breakpoint-up(sm) {
+  //.fa-chevron-circle-left{
+  //  position: absolute;
+  //  bottom: 15%;
+  //  left: 10%;
+  //}
+  //.fa-chevron-circle-right{
+  //  position: absolute;
+  //  bottom: 15%;
+  //  right: 10%;
+  //}
+}
 @include media-breakpoint-up(md) {
+  .mynav{
+    height: 100vh;
+  }
+  .carousel-item img{
+    height: 100vh ;
+  }
   .carousel-caption{
     top : 50% !important;
     left: 50% !important;
     transform: translate(-50%,-50%);
   }
-
+  .fa-chevron-circle-left{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+  }
+  .fa-chevron-circle-right{
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+  }
 }
 @include media-breakpoint-up(lg) {  }
 
