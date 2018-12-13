@@ -9,7 +9,10 @@
   width: 30px;
   line-height: 30px !important;
 }
-
+.catergory_blok .prijs{
+  font-size: 1.2rem;
+  color: #55cd71 !important;
+}
 //.fa-chevron-circle-left{
 //  position: absolute;
 //  bottom: 30%;
@@ -23,16 +26,7 @@
 
 
 @include media-breakpoint-up(sm) {
-  //.fa-chevron-circle-left{
-  //  position: absolute;
-  //  bottom: 15%;
-  //  left: 10%;
-  //}
-  //.fa-chevron-circle-right{
-  //  position: absolute;
-  //  bottom: 15%;
-  //  right: 10%;
-  //}
+
 }
 @include media-breakpoint-up(md) {
   .mynav{
