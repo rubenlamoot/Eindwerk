@@ -1,5 +1,9 @@
 //Dit is mijn eigen css bestand
 
+body{
+  width: 100vw;
+  overflow-x: hidden ;
+}
 .logo{
   font-size: 1.3rem !important;
 }
@@ -9,9 +13,15 @@
   width: 30px;
   line-height: 30px !important;
 }
-.catergory_blok .prijs{
+.prijs{
   font-size: 1.2rem;
   color: #55cd71 !important;
+}
+.breadcrumb{
+  background: transparent;
+ }
+h2{
+  font-size: 1.6rem !important;
 }
 
 //.fa-chevron-circle-left{
@@ -27,13 +37,15 @@
 
 
 @include media-breakpoint-up(sm) {
-
+  h2{
+    font-size: 2rem !important;
+  }
 }
 @include media-breakpoint-up(md) {
   .mynav{
     height: 100vh;
   }
-  .carousel-item img{
+  .homepic{
     height: 100vh ;
   }
   .carousel-caption{
@@ -55,4 +67,8 @@
 }
 @include media-breakpoint-up(lg) {  }
 
-@include media-breakpoint-up(xl) {  }
+@include media-breakpoint-up(xl) {
+  .card{
+    width: 85%;
+  }
+}

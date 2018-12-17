@@ -13,9 +13,9 @@
 
 </head>
 <body class="bg-light">
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="row">
-            <header class="col-md-3 col-xl-2 w-100 p-0 bg-light mynav d-flex flex-column align-items-center">
+            <header class="col-md-3 col-xl-2 w-100 bg-light mynav d-flex flex-column align-items-center">
                 <nav class="navbar navbar-expand-md navbar-light d-flex flex-column mb-auto">
                     <a class="navbar-brand text-center" href="index.html">
                         <img src="assets/images/logo_small.png" width="100" height="100" class="" alt="logo">
@@ -93,29 +93,35 @@
 
             </header>
 
-            <main class="col-md-9 col-xl-10 p-0" id="maincontent">
-                <h2 class="text-center my-5">Groenten</h2>
+            <main class="col-md-9 col-xl-10" id="maincontent">
+                <div id="shop_menu" class="d-flex justify-content-end my-3 pr-5 w-100">
+                    <i class="fas fa-shopping-cart pt-1 pr-2"></i>
+                    <p class="pr-2">Producten: </p>
+                    <p id="aantal" class="pr-3">2</p>
+                    <p id="prijs">25.99 €</p>
+                </div>
+                <h2 class="text-center mb-5">Groenten</h2>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="row">
-                            <div class="col-lg-6 catergory_blok">
+                            <div class="col-lg-6 category_blok">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/images/stokslaboon.jpg" alt="Sultana">
                                     <div class="card-body">
                                         <h5 class="card-title">Stokslaboon 'Sultana'</h5>
-                                        <p class="card-text">Stokslaboon ’Sultana’ (Phaseolus vulgaris) levert sterke en krachtige planten die vele sappige ronde bonen produceren.</p>
-                                        <a href="#" class="btn btn-primary">Bestellen</a>
+                                        <p class="card-text">Stokslaboon ’Sultana’ (Phaseolus vulgaris) levert sterke en krachtige planten die vele sappige ronde bonen ...</p>
+                                        <a href="product.html" class="btn btn-primary">Bestellen</a>
                                         <p class="prijs float-right">€ 6.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 catergory_blok">
+                            <div class="col-lg-6 category_blok">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/images/tomaat_shirley.jpg" alt="Shirley">
                                     <div class="card-body">
                                         <h5 class="card-title">Tomaat 'Shirley F1 Hybride'</h5>
-                                        <p class="card-text">Tomaat 'Shirley' F1 Hybride (Solanum lycopersicon) is een toonaangevend ras dat nauwelijks vatbaar is voor ziektes.</p>
-                                        <a href="#" class="btn btn-primary">Bestellen</a>
+                                        <p class="card-text">Tomaat 'Shirley' F1 Hybride (Solanum lycopersicon) is een toonaangevend ras dat nauwelijks vatbaar is voor ...</p>
+                                        <a href="product.html" class="btn btn-primary">Bestellen</a>
                                         <p class="prijs float-right">€ 5.99</p>
 
                                     </div>
@@ -125,25 +131,25 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="row">
-                            <div class="col-lg-6 catergory_blok">
+                            <div class="col-lg-6 category_blok">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/images/paprika_esmeralda.jpg" alt="Esmeralda">
                                     <div class="card-body">
                                         <h5 class="card-title">Paprika 'Esmeralda F1'</h5>
                                         <p class="card-text">Paprika 'Esmeralda' (Caspicum annuum) levert vruchten tot wel 14 cm lang met veel vruchtvlees! Als de vruchten ...</p>
-                                        <a href="#" class="btn btn-primary">Bestellen</a>
+                                        <a href="product.html" class="btn btn-primary">Bestellen</a>
                                         <p class="prijs float-right">€ 3.99</p>
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 catergory_blok">
+                            <div class="col-lg-6 category_blok">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/images/courgette_diamant.jpg" alt="Diamant">
                                     <div class="card-body">
                                         <h5 class="card-title">Courgette 'Diamant F1'</h5>
-                                        <p class="card-text">Courgette 'Diamant F1 hybride' (Cucurbita pepo) vormt geen ranken, de vruchten groeien vanuit het centrum van de plant.</p>
-                                        <a href="#" class="btn btn-primary">Bestellen</a>
+                                        <p class="card-text">Courgette 'Diamant F1 hybride' (Cucurbita pepo) vormt geen ranken, de vruchten groeien vanuit het centrum ...</p>
+                                        <a href="product.html" class="btn btn-primary">Bestellen</a>
                                         <p class="prijs float-right">€ 2.50</p>
 
                                     </div>
@@ -152,27 +158,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-3">
                     <div class="col-sm-6">
                         <div class="row">
-                            <div class="col-lg-6 catergory_blok">
+                            <div class="col-lg-6 category_blok">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/images/wortel_nantes.jpg" alt="Nantes">
                                     <div class="card-body">
                                         <h5 class="card-title">Zomerwortelen 'Nantes'</h5>
                                         <p class="card-text">Zomerwortelen 'Nantes' (Daucus carota) is een topsoort, dat zorgt voor een hoge opbrengst van heerlijke wortelen met ...</p>
-                                        <a href="#" class="btn btn-primary">Bestellen</a>
+                                        <a href="product.html" class="btn btn-primary">Bestellen</a>
                                         <p class="prijs float-right">€ 1.95</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 catergory_blok">
+                            <div class="col-lg-6 category_blok">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/images/bloemkool_amazing.jpg" alt="Amazing">
                                     <div class="card-body">
                                         <h5 class="card-title">Bloemkool 'Amazing'</h5>
                                         <p class="card-text">Bloemkool 'Amazing' (Brassica oleracea convar. botrytis var. botrytis)is een productief ras en zeer gemakkelijk voor ...</p>
-                                        <a href="#" class="btn btn-primary">Bestellen</a>
+                                        <a href="product.html" class="btn btn-primary">Bestellen</a>
                                         <p class="prijs float-right">€ 2.99</p>
 
                                     </div>
@@ -182,25 +188,25 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="row">
-                            <div class="col-lg-6 catergory_blok">
+                            <div class="col-lg-6 category_blok">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/images/komkommer_gemini.jpg" alt="Gemini">
                                     <div class="card-body">
                                         <h5 class="card-title">Komkommer 'Gemini F1'</h5>
                                         <p class="card-text">Komkommer 'Gemini F1 hybride' (Cucumis sativus) is een productief en rijkdragend soort dat voornamelijk vrouwelijk ...</p>
-                                        <a href="#" class="btn btn-primary">Bestellen</a>
+                                        <a href="product.html" class="btn btn-primary">Bestellen</a>
                                         <p class="prijs float-right">€ 6.99</p>
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 catergory_blok">
+                            <div class="col-lg-6 category_blok">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/images/radijs_riesenbutter.jpg" alt="Riesenbutter">
                                     <div class="card-body">
                                         <h5 class="card-title">Radijsjes 'Riesenbutter'</h5>
-                                        <p class="card-text">Radijs 'Riesenbutter' (Raphanus sativus) heeft boterzacht vruchtvlees dat niet snel sponsachtig wordt. 'Riesenbutter' is ...</p>
-                                        <a href="#" class="btn btn-primary">Bestellen</a>
+                                        <p class="card-text">Radijs 'Riesenbutter' (Raphanus sativus) heeft boterzacht vruchtvlees dat niet snel sponsachtig wordt.</p>
+                                        <a href="product.html" class="btn btn-primary">Bestellen</a>
                                         <p class="prijs float-right">€ 5.99</p>
 
                                     </div>
