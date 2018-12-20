@@ -1,9 +1,5 @@
 //Dit is mijn eigen css bestand
 
-body{
-  width: 100vw;
-  overflow-x: hidden ;
-}
 .logo{
   font-size: 1.3rem !important;
 }
@@ -22,6 +18,9 @@ body{
  }
 h2{
   font-size: 1.6rem !important;
+}
+h3{
+  font-size: 1.0rem !important;
 }
 
 //.fa-chevron-circle-left{
@@ -42,12 +41,7 @@ h2{
   }
 }
 @include media-breakpoint-up(md) {
-  .mynav{
-    height: 100vh;
-  }
-  .homepic{
-    height: 100vh ;
-  }
+
   .carousel-caption{
     top : 50% !important;
     left: 50% !important;
@@ -65,7 +59,18 @@ h2{
   }
 
 }
-@include media-breakpoint-up(lg) {  }
+@include media-breakpoint-up(lg) {
+  body{
+    width: 100vw;
+    overflow-x: hidden ;
+  }
+  .mynav{
+    height: 100vh;
+  }
+  .homepic{
+    height: 100vh ;
+  }
+}
 
 @include media-breakpoint-up(xl) {
   .card{
