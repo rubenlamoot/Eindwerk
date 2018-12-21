@@ -7507,9 +7507,19 @@ h2 {
 h3 {
   font-size: 1.0rem !important; }
 
+#linksFooter {
+  list-style-type: none; }
+
 @media (min-width: 576px) {
   h2 {
-    font-size: 2rem !important; } }
+    font-size: 2rem !important; }
+  #linksFooter {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  #linksFooter .streepje::after {
+    padding-left: 1rem;
+    content: "|"; } }
 
 @media (min-width: 768px) {
   .carousel-caption {

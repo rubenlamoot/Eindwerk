@@ -3,7 +3,6 @@
 .logo{
   font-size: 1.3rem !important;
 }
-
 .social_icon{
   background: #999999;
   width: 30px;
@@ -22,6 +21,9 @@ h2{
 h3{
   font-size: 1.0rem !important;
 }
+#linksFooter{
+  list-style-type: none;
+}
 
 //.fa-chevron-circle-left{
 //  position: absolute;
@@ -39,6 +41,14 @@ h3{
   h2{
     font-size: 2rem !important;
   }
+  #linksFooter{
+    display: inline-flex;
+  }
+  #linksFooter .streepje::after{
+    padding-left: 1rem;
+    content: "|";
+  }
+
 }
 @include media-breakpoint-up(md) {
 
