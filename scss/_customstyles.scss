@@ -24,6 +24,16 @@ h3{
 #linksFooter{
   list-style-type: none;
 }
+.inputZakje, .pKorting{
+  width: 100%;
+}
+.kiesAantal{
+  width: 50px;
+}
+.img-product{
+  width: 50%;
+  height: 50%;
+}
 
 //.fa-chevron-circle-left{
 //  position: absolute;
@@ -48,7 +58,9 @@ h3{
     padding-left: 1rem;
     content: "|";
   }
-
+  .inputZakje, .pKorting{
+    width: 75%;
+  }
 }
 @include media-breakpoint-up(md) {
 
@@ -80,10 +92,21 @@ h3{
   .homepic{
     height: 100vh ;
   }
+
+  .img-product{
+    width: 100%;
+    height: 100%;
+  }
+  .card_product{
+    height: 100%;
+  }
 }
 
 @include media-breakpoint-up(xl) {
   .card{
     width: 85%;
+  }
+  .inputZakje, .pKorting{
+    width: 50%
   }
 }

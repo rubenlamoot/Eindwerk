@@ -7510,6 +7510,16 @@ h3 {
 #linksFooter {
   list-style-type: none; }
 
+.inputZakje, .pKorting {
+  width: 100%; }
+
+.kiesAantal {
+  width: 50px; }
+
+.img-product {
+  width: 50%;
+  height: 50%; }
+
 @media (min-width: 576px) {
   h2 {
     font-size: 2rem !important; }
@@ -7519,7 +7529,9 @@ h3 {
     display: inline-flex; }
   #linksFooter .streepje::after {
     padding-left: 1rem;
-    content: "|"; } }
+    content: "|"; }
+  .inputZakje, .pKorting {
+    width: 75%; } }
 
 @media (min-width: 768px) {
   .carousel-caption {
@@ -7544,8 +7556,15 @@ h3 {
   .mynav {
     height: 100vh; }
   .homepic {
-    height: 100vh; } }
+    height: 100vh; }
+  .img-product {
+    width: 100%;
+    height: 100%; }
+  .card_product {
+    height: 100%; } }
 
 @media (min-width: 1200px) {
   .card {
-    width: 85%; } }
+    width: 85%; }
+  .inputZakje, .pKorting {
+    width: 50%; } }

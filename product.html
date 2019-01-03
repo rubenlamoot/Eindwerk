@@ -111,7 +111,7 @@
 
                     <img src="assets/images/tomaat_shirley_groot.jpg" alt="Shirley" class="img-fluid">
                 </div>
-                <div class="col-sm-8 ml-4 ml-sm-0">
+                <div class="col-sm-8 ml-sm-0">
                     <h2>Tomaat 'Shirley F1'</h2>
                     <p>Tomaat 'Shirley' F1 Hybride (Solanum lycopersicon) is een toonaangevend ras dat nauwelijks vatbaar is voor ziektes.
                         'Shirley' produceert heerlijke, vlezige tomaten die bijzonder smakelijk zijn. Het vruchtvlees is mooi stevig.
@@ -119,79 +119,88 @@
                     <form>
                         <div class="input-group d-flex flex-column">
                             <div class="input-group-prepend">
-                                <div class="input-group-text w-75 d-flex">
+                                <div class="input-group-text d-flex inputZakje">
                                     <input type="radio" aria-label="Radio button">
                                     <p class="mb-0 w-100 text-left pl-2">1 zakje (25 zaadjes)</p>
                                     <p class="prijs mb-0 flex-shrink-1">€ 5.99</p>
                                 </div>
                             </div>
                             <div class="input-group-prepend d-flex flex-column">
-                                <div class="input-group-text w-75 d-flex">
+                                <div class="input-group-text d-flex inputZakje">
                                     <input type="radio" aria-label="Radio button">
-                                    <p class="mb-0 pl-2 w-100 text-left">2 zakjes (50 zaadjes)</p>
-                                    <p class="prijs mb-0 flex-shrink-1">€ 9.99</p>
+                                    <p class="mb-0 pl-2 w-100 text-left">1 zakje (50 zaadjes)</p>
+                                    <p class="prijs mb-0 flex-shrink-1">€ 8.99</p>
                                 </div>
-                                <p class="mb-0 text-right w-75 text-warning">50% korting op 2e zakje</p>
+                                <p class="mb-0 text-right text-warning pKorting">25% korting op zakje met 50 zaadjes</p>
                             </div>
                             <p><br>Geschatte levertijd : vandaag voor 22u besteld, morgen in huis.</p>
                         </div>
-
-                        <select class="custom-select w-25">
-                            <option selected value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select>
-                        <button type="submit" class="btn btn-primary">Toevoegen aan winkelwagen</button>
+                        <div class="kiesWinkel d-flex flex-row">
+                            <select class="custom-select kiesAantal mr-2">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary">Toevoegen aan winkelwagen</button>
+                        </div>
                     </form>
                 </div>
             </section>
             <section id="related_products" class="row">
                 <div class="col-12">
-                    <header>
-                        <h2 class="mb-3 text-center text-md-left">Gerelateerde producten</h2>
+                    <header class="d-flex flex-row">
+                        <a class="my_product_carousel pl-lg-5" href="#carouselProduct" role="button" data-slide="prev">
+                            <span class="fas fa-angle-left fa-2x text-secondary" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <h2 class="mb-3 text-center flex-grow-1">Gerelateerde producten</h2>
+                        <a class="my_product_carousel pr-lg-5" href="#carouselProduct" role="button" data-slide="next">
+                            <span class="fas fa-angle-right fa-2x text-secondary" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </header>
                 </div>
 
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="none">
+                <div id="carouselProduct" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                            <div class="col-sm-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/images/tomaat_badro.jpg" alt="Card image cap">
+                            <div class="col-sm-6 col-lg-3 mb-2">
+                                <div class="card d-flex flex-row flex-lg-column card_product">
+                                    <img class="card-img-top img-product img-fluid" src="assets/images/tomaat_badro.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Vleestomaat 'Badro F1'</h5>
                                         <p class="card-text prijs">€ 6.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/images/tomaat_cherry.jpg" alt="Card image cap">
+                            <div class="col-sm-6 col-lg-3 mb-2">
+                                <div class="card d-flex flex-row flex-lg-column card_product">
+                                    <img class="card-img-top img-product img-fluid" src="assets/images/tomaat_cherry.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Kersttomaten 'Cherry'</h5>
                                         <p class="card-text prijs">€ 5.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/images/tomaat_whitebeef.jpg" alt="Card image cap">
+                            <div class="col-sm-6 col-lg-3 mb-2">
+                                <div class="card d-flex flex-row flex-lg-column card_product">
+                                    <img class="card-img-top img-product img-fluid" src="assets/images/tomaat_whitebeef.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Vleestomaat 'White beefsteak'</h5>
                                         <p class="card-text prijs">€ 6.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/images/tomaat_pyros.jpg" alt="Card image cap">
+                            <div class="col-sm-6 col-lg-3 mb-2">
+                                <div class="card d-flex flex-row flex-lg-column card_product">
+                                    <img class="card-img-top img-product img-fluid" src="assets/images/tomaat_pyros.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Tomaat 'Pyros F1'</h5>
                                         <p class="card-text prijs">€ 4.50</p>
@@ -203,36 +212,36 @@
 
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="assets/images/tomaat_indigo.jpg" alt="Card image cap">
+                                <div class="col-sm-6 col-lg-3 mb-2">
+                                    <div class="card d-flex flex-row flex-lg-column card_product">
+                                        <img class="card-img-top img-product img-fluid" src="assets/images/tomaat_indigo.jpg" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">Tomaat 'Indigo Rose'</h5>
                                             <p class="card-text prijs">€ 3.99</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="assets/images/tomaat_yellowpear.jpg" alt="Card image cap">
+                                <div class="col-sm-6 col-lg-3 mb-2">
+                                    <div class="card d-flex flex-row flex-lg-column card_product">
+                                        <img class="card-img-top img-product img-fluid" src="assets/images/tomaat_yellowpear.jpg" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">Tomaat 'Yellow Pearshaped'</h5>
                                             <p class="card-text prijs">€ 2.25</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="assets/images/tomaat_modus.jpg" alt="Card image cap">
+                                <div class="col-sm-6 col-lg-3 mb-2">
+                                    <div class="card d-flex flex-row flex-lg-column card_product">
+                                        <img class="card-img-top img-product img-fluid" src="assets/images/tomaat_modus.jpg" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">Snacktomaat 'Modus'</h5>
                                             <p class="card-text prijs">€ 4.50</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="assets/images/tomaat_tumbling.jpg" alt="Card image cap">
+                                <div class="col-sm-6 col-lg-3 mb-2">
+                                    <div class="card d-flex flex-row flex-lg-column card_product">
+                                        <img class="card-img-top img-product img-fluid" src="assets/images/tomaat_tumbling.jpg" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">Tomaat 'Tumbling Jester'</h5>
                                             <p class="card-text prijs">€ 3.99</p>
@@ -244,16 +253,71 @@
                         </div>
 
                     </div>
-                    <a class="my_product_carousel" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <div class="d-flex d-lg-none w-100">
+                    <a class="my_product_carousel mr-auto pl-5" href="#carouselProduct" role="button" data-slide="prev">
+                        <span class="fas fa-angle-left fa-2x text-secondary" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="my_product_carousel" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <a class="my_product_carousel pr-5" href="#carouselProduct" role="button" data-slide="next">
+                        <span class="fas fa-angle-right fa-2x text-secondary" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                </div>
           </section>
         </main>
+        <footer class="row border-bottom">
+            <div class="col-12 col-sm-6 col-lg-4 my-3">
+                <h3 class="text-uppercase text-center">nuttige links</h3>
+                <ul class="list-group list-group-flush text-center bg-light">
+                    <li class="list-group-item bg-light"><a class="text-secondary" href="#">Over ons</a></li>
+                    <li class="list-group-item bg-light"><a class="text-secondary" href="#">Bestellen</a></li>
+                    <li class="list-group-item bg-light"><a class="text-secondary" href="#">Levering</a></li>
+                    <li class="list-group-item bg-light"><a class="text-secondary" href="#">Retourneren</a></li>
+                    <li class="list-group-item bg-light"><a class="text-secondary" href="#">Veilig betalen</a></li>
+                    <li class="list-group-item bg-light"><a class="text-secondary" href="#">Kwaliteit & garantie</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 my-sm-3 pl-4 pl-sm-0">
+                <h3 class="text-uppercase text-center">contact</h3>
+                <p>Schrijf je in voor de nieuwsbrief:</p>
+                <form class="d-flex flex-row mb-3 border-bottom mb-sm-4 pb-sm-1">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Geef je email in">
+                    </div>
+                    <button type="submit" class="btn btn-secondary h-75">Verstuur</button>
+                </form>
+                <div class="d-flex flex-column pt-sm-3 pl-sm-4">
+                    <address>Kloosterstraat 5<br>
+                        8647 Noordschote, België</address>
+
+                    <i class="fas fa-phone-volume mb-2 pl-1"> : 0486/12.34.56</i>
+                    <i class="fas fa-fax mb-3"> : 057/12.34.56</i>
+                    <i class="fas fa-envelope-square mb-3"><a href="mailto:demoestuinier@gmail.com"> : demoestuinier@gmail.com</a></i>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5 pl-4 pl-lg-0 my-lg-3">
+                <h3 class="text-uppercase text-center">wat zegt twitter</h3>
+                <p>Donec et tortor orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae http://t.co/MqacjST476</p>
+                <p>1 uur geleden</p>
+                <p>Aliquam aliquam fermentum arcu.
+                    Sed et magna dolor, eu fermentum enim. Aliquam http://t.co/CCkfps248sq consectetur ligula</p>
+                <p>3 uur geleden</p>
+            </div>
+
+            <div class="row w-100 border-top">
+                <div class="col-12 text-center my-3 d-flex justify-content-center">
+                    <ul id="linksFooter">
+                        <li><a href="#" class="text-secondary streepje">Inloggen</a></li>
+                        <li><a href="#" class="text-secondary streepje pl-sm-3">Registreren</a></li>
+                        <li><a href="#" class="text-secondary streepje pl-sm-3">Mijn Account</a></li>
+                        <li><a href="#" class="text-secondary pl-sm-3">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 
 </div>
