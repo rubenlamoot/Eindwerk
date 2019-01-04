@@ -7520,6 +7520,24 @@ h3 {
   width: 50%;
   height: 50%; }
 
+.pZaai {
+  border-right: 50px solid green; }
+
+.pOogst {
+  border-right: 50px solid orange; }
+
+#maanden {
+  font-size: 0.8rem !important; }
+
+#divZaai div, #divOogst div {
+  width: 8.33%; }
+
+.zaaien {
+  background-color: green; }
+
+.oogsten {
+  background-color: orange; }
+
 @media (min-width: 576px) {
   h2 {
     font-size: 2rem !important; }
@@ -7547,7 +7565,9 @@ h3 {
   .fa-chevron-circle-right {
     position: absolute;
     bottom: 10%;
-    left: 60%; } }
+    left: 60%; }
+  #maanden {
+    font-size: 1.0rem !important; } }
 
 @media (min-width: 992px) {
   body {
