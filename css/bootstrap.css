@@ -7529,9 +7529,6 @@ h3 {
 #maanden {
   font-size: 0.8rem !important; }
 
-#divZaai div, #divOogst div {
-  width: 8.33%; }
-
 .zaaien {
   background-color: green; }
 
@@ -7587,4 +7584,6 @@ h3 {
   .card {
     width: 85%; }
   .inputZakje, .pKorting {
-    width: 50%; } }
+    width: 50%; }
+  #zaaiOogst {
+    width: 75%; } }
