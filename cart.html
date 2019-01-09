@@ -99,7 +99,7 @@
                         <a href="cart.html"><i class="fas fa-shopping-cart pt-1 pr-2 text-secondary"></i></a>
                         <p class="pr-2">Producten: </p>
                         <p id="aantal" class="pr-3">3</p>
-                        <p id="prijs">€ 12.48</p>
+                        <p class="subTotal">€ 12.48</p>
                     </div>
                 </div>
                 <nav aria-label="breadcrumb">
@@ -233,7 +233,77 @@
                             </div>
                         </div>
                     </div>
+                </section>
+                <section id="Shipping_totalPrice">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="pill_ship_tab" data-toggle="pill" href="#pill_ship" role="tab" aria-controls="pill_ship" aria-selected="true">Verzending</a>
+                                <a class="nav-link" id="pill_discount_tab" data-toggle="pill" href="#pill_discount" role="tab" aria-controls="pill_discount" aria-selected="false">Kortingscode</a>
+                                <a class="nav-link" id="pill_voucher_tab" data-toggle="pill" href="#pill_voucher" role="tab" aria-controls="pill_voucher" aria-selected="false">Kadobon</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="pill_ship" role="tabpanel" aria-labelledby="pill_ship_tab">
+                                    <form action="" class="my-3">
+                                         <select class="form-control" id="countries">
+                                             <option selected value="1">Beglië</option>
+                                             <option value="2">Duitsland</option>
+                                             <option value="3">Frankrijk</option>
+                                             <option value="4">Luxemburg</option>
+                                             <option value="5">Nederland</option>
+                                         </select>
+                                        <input type="text" class="form-control" id="postCode" placeholder="Postcode/Zip">
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="pill_discount" role="tabpanel" aria-labelledby="pill_discount_tab">
+                                    <form action="" class="my-3">
+                                        <input type="text" class="form-control" id="discount" placeholder="Geef hier je kortingscode in">
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="pill_voucher" role="tabpanel" aria-labelledby="pill_voucher_tab">
+                                    <form action="" class="my-3">
+                                        <input type="text" class="form-control" id="voucher" placeholder="Geef hier je kadoboncode in">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 border border-dark px-0">
+                            <div class="row">
+                                <div class="col-8 px-0 text-center">
+                                    <p class="border-bottom border-secondary mb-0 py-3">Subtotaal : </p>
+                                    <p class="border-bottom border-secondary mb-0 py-3">Verzendingskosten : </p>
+                                    <p class="border-bottom border-secondary mb-0 py-3">Korting : </p>
+                                    <p class="mb-0 py-3">Totaal : </p>
+                                </div>
+                                <div class="col-4 px-0 border-left border-secondary text-center">
+                                    <p class="subTotal border-bottom border-secondary mb-0 py-3">€ 12.48</p>
+                                    <p class="shipCost border-bottom border-secondary mb-0 py-3">€ 7.00</p>
+                                    <p class="discountVoucher border-bottom border-secondary mb-0 py-3">€ 0.00</p>
+                                    <p class="subTotal mb-0 py-3">€ 19.48</p>
+                                </div>
+                            </div>
 
+
+                            <!--<div class="d-flex border-bottom border-secondary">-->
+                                <!--<p class="border-right border-secondary my-3">Subtotaal : </p>-->
+                                <!--<p class="subTotal my-3">€ 12.48</p>-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<p>Verzendingskosten : </p>-->
+                                <!--<p class="shipCost">€ 7.00</p>-->
+                             <!--</div>-->
+                            <!--<div>-->
+                                <!--<p>Korting : </p>-->
+                                <!--<p class="discountVoucher">€ 0.00</p>-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<p>Totaal : </p>-->
+                                <!--<p class="subTotal">€ 19.48</p>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
                 </section>
             </main>
             <footer class="row border-bottom">
