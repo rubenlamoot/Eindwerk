@@ -109,22 +109,198 @@
                 <section>
                     <div class="row">
                         <div class="col-12">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link bg-secondary text-white active mb-1" id="v-pills-stap1-tab" data-toggle="pill" href="#v-pills-stap1" role="tab" aria-controls="v-pills-stap1" aria-selected="true">Stap 1 <span class="float-right">Checkout opties</span></a>
-                                <a class="nav-link bg-secondary text-white mb-1" id="v-pills-profile-stap2" data-toggle="pill" href="#v-pills-stap2" role="tab" aria-controls="v-pills-stap2" aria-selected="false">Stap 2 <span class="float-right">Betalingsinformatie</span></a></a>
-                                <a class="nav-link bg-secondary text-white mb-1" id="v-pills-messages-stap3" data-toggle="pill" href="#v-pills-stap3" role="tab" aria-controls="v-pills-stap3" aria-selected="false">Stap 3 <span class="float-right">Verzendingsdetails</span></a></a>
-                                <a class="nav-link bg-secondary text-white mb-1" id="v-pills-settings-stap4" data-toggle="pill" href="#v-pills-stap4" role="tab" aria-controls="v-pills-stap4" aria-selected="false">Stap 4 <span class="float-right">Verzendingsmethode</span></a></a>
-                                <a class="nav-link bg-secondary text-white mb-1" id="v-pills-messages-stap5" data-toggle="pill" href="#v-pills-stap5" role="tab" aria-controls="v-pills-stap5" aria-selected="false">Stap 5 <span class="float-right">Betalingsmethode</span></a></a>
-                                <a class="nav-link bg-secondary text-white mb-1" id="v-pills-settings-stap6" data-toggle="pill" href="#v-pills-stap6" role="tab" aria-controls="v-pills-stap6" aria-selected="false">Stap 6 <span class="float-right">Bevestig order</span></a></a>
+                            <div class="accordion" id="accordion_Checkout">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Stap 1 Checkout opties
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_Checkout">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 d-flex flex-column mb-5">
+                                                    <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">nieuwe klant</h3>
+                                                    <p>Meld je bij ons aan voor toekomstig gemak:</p>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="gastRadios" value="option1" checked>
+                                                        <label class="form-check-label" for="gastRadios">
+                                                            Checkout als Bezoeker
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="registreerRadios" value="option2">
+                                                        <label class="form-check-label" for="registreerRadios">
+                                                            Registreer
+                                                        </label>
+                                                    </div>
+                                                    <p class="mt-3 border-bottom border-secondary pb-3">Maak een account aan bij onze winkel en ga vlugger door het checkout proces. Bovendien kan je meerdere leveringsadressen opslaan en je orders bekijken en volgen via je account. </p>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button class="btn btn-dark text-uppercase" type="submit">ga verder</button>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 col-md-6 d-flex flex-column">
+                                                    <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">bestaande klant</h3>
+                                                    <p>Als je reeds een account hebt bij ons, gelieve dan in te loggen.</p>
+                                                    <form class="border-bottom border-secondary mb-3">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" id="loginEmail" placeholder="Vul uw email in">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control" id="loginPassword" placeholder="Paswoord">
+                                                        </div>
+                                                        <div class="form-group form-check mb-lg-8 mb-xl-3">
+                                                            <input type="checkbox" class="form-check-input" id="savePass">
+                                                            <label class="form-check-label pb-1" for="savePass">Paswoord onthouden</label>
+                                                        </div>
+                                                    </form>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button class="btn btn-secondary text-uppercase" type="submit">inloggen</button>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="text-danger">Paswoord vergeten?</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Stap 2 <span class="">Facturatie gegevens</span>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_Checkout">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">Je persoonlijke gegevens</h3>
+                                                    <form class="">
+                                                        <input type="text" class="form-control mb-2 mt-3" id="firstName" placeholder="Voornaam">
+                                                        <input type="text" class="form-control mb-2" id="lastName" placeholder="Familienaam">
+                                                        <input type="email" class="form-control mb-2" id="billingEmail" placeholder="Email">
+                                                        <input type="tel" class="form-control mb-2" id="phoneNumber" placeholder="Telefoonnummer">
+                                                        <input type="text" class="form-control mb-2" id="company" placeholder="Bedrijf">
+                                                        <input type="password" class="form-control mb-2" id="billingPassword" placeholder="Paswoord">
+                                                        <input type="password" class="form-control mb-3" id="billingPassword2" placeholder="Bevestig je paswoord">
+                                                    </form>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-3 mt-md-0 pb-3">Je adres</h3>
+                                                    <form class="">
+                                                        <input type="text" class="form-control mb-2 mt-3" id="address1" placeholder="Adres">
+                                                        <input type="text" class="form-control mb-2" id="address2" placeholder="Adres 2">
+                                                        <input type="text" class="form-control mb-2" id="postalCode" placeholder="Postcode">
+                                                        <input type="text" class="form-control mb-2" id="city" placeholder="Stad">
+                                                        <div class="form-group d-flex">
+                                                            <label for="countrySelect" class="pr-3 pt-1">Land:</label>
+                                                            <select class="form-control" id="countrySelect">
+                                                                <option selected value="1">België</option>
+                                                                <option value="2">Duitsland</option>
+                                                                <option value="3">Frankrijk</option>
+                                                                <option value="4">Luxemburg</option>
+                                                                <option value="5">Nederland</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-check border-top border-secondary pt-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="delevery_billingCheck">
+                                                        <label class="form-check-label" for="delevery_billingCheck">
+                                                            Mijn leverings- en facturatieadres zijn hetzelfde.
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-check borderAddress py-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="privacyCheck">
+                                                        <label class="form-check-label" for="privacyCheck">
+                                                            Ik heb de verkoopsvoorwaarden gelezen en goedgekeurd.
+                                                        </label>
+                                                    </div>
+                                                    <button class="btn btn-dark text-uppercase" type="submit">ga verder</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Stap 3 <span class="">Verzendingsdetails</span>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion_Checkout">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Stap 4 <span class="">Verzendingsmethode</span>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion_Checkout">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                Stap 5 <span class="">Betalingsmethode</span>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion_Checkout">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingSix">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                Stap 6 <span class="">Bevestig order</span>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion_Checkout">
+                                        <div class="card-body">
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-stap1" role="tabpanel" aria-labelledby="v-pills-stap1-tab">...</div>
-                                <div class="tab-pane fade" id="v-pills-stap2" role="tabpanel" aria-labelledby="v-pills-stap2-tab">...</div>
-                                <div class="tab-pane fade" id="v-pills-stap3" role="tabpanel" aria-labelledby="v-pills-stap3-tab">...</div>
-                                <div class="tab-pane fade" id="v-pills-stap4" role="tabpanel" aria-labelledby="v-pills-stap4-tab">...</div>
-                                <div class="tab-pane fade" id="v-pills-stap5" role="tabpanel" aria-labelledby="v-pills-stap5-tab">...</div>
-                                <div class="tab-pane fade" id="v-pills-stap6" role="tabpanel" aria-labelledby="v-pills-stap6-tab">...</div>
+
+
                             </div>
                         </div>
                     </div>
