@@ -113,12 +113,12 @@
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Stap 1 Checkout opties
+                                            <button class="btn btn-link w-100 d-flex" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <span class="text-secondary">Stap 1</span>
+                                                <span class="text-dark flex-grow-1 text-right">Checkout opties</span>
                                             </button>
                                         </h2>
                                     </div>
-
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_Checkout">
                                         <div class="card-body">
                                             <div class="row">
@@ -179,8 +179,9 @@
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Stap 2 <span class="">Facturatie gegevens</span>
+                                            <button class="btn btn-link collapsed w-100 d-flex" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <span class="text-secondary">Stap 2</span>
+                                                <span class="text-dark flex-grow-1 text-right">Facturatiegegevens</span>
                                             </button>
                                         </h2>
                                     </div>
@@ -188,27 +189,31 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-12 col-md-6">
-                                                    <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">Je persoonlijke gegevens</h3>
+                                                    <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">Persoonlijke gegevens</h3>
                                                     <form class="">
-                                                        <input type="text" class="form-control mb-2 mt-3" id="firstName" placeholder="Voornaam">
-                                                        <input type="text" class="form-control mb-2" id="lastName" placeholder="Familienaam">
-                                                        <input type="email" class="form-control mb-2" id="billingEmail" placeholder="Email">
-                                                        <input type="tel" class="form-control mb-2" id="phoneNumber" placeholder="Telefoonnummer">
-                                                        <input type="text" class="form-control mb-2" id="company" placeholder="Bedrijf">
-                                                        <input type="password" class="form-control mb-2" id="billingPassword" placeholder="Paswoord">
-                                                        <input type="password" class="form-control mb-3" id="billingPassword2" placeholder="Bevestig je paswoord">
+                                                        <input type="text" class="form-control mb-2 mt-3" id="facFirstName" placeholder="Voornaam">
+                                                        <input type="text" class="form-control mb-2" id="facLastName" placeholder="Familienaam">
+                                                        <input type="email" class="form-control mb-2" id="facBillingEmail" placeholder="Email">
+                                                        <input type="tel" class="form-control mb-2" id="facPhoneNumber" placeholder="Telefoonnummer">
+                                                        <input type="text" class="form-control mb-2" id="facCompany" placeholder="Bedrijf">
+                                                        <input type="text" class="form-control mb-2" id="facBtwNumber" placeholder="BTW-nummer">
+                                                        <input type="password" class="form-control mb-2" id="facBillingPassword" placeholder="Paswoord">
+                                                        <input type="password" class="form-control mb-3" id="facBillingPassword2" placeholder="Bevestig je paswoord">
                                                     </form>
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-3 mt-md-0 pb-3">Je adres</h3>
+                                                    <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-3 mt-md-0 pb-3">Facturatieadres</h3>
                                                     <form class="">
-                                                        <input type="text" class="form-control mb-2 mt-3" id="address1" placeholder="Adres">
-                                                        <input type="text" class="form-control mb-2" id="address2" placeholder="Adres 2">
-                                                        <input type="text" class="form-control mb-2" id="postalCode" placeholder="Postcode">
-                                                        <input type="text" class="form-control mb-2" id="city" placeholder="Stad">
+                                                        <input type="text" class="form-control mb-2 mt-3" id="facAddress" placeholder="Adres">
+                                                        <div class="d-flex">
+                                                            <input type="text" class="form-control mb-2 mr-3" id="facHouseNumber" placeholder="Nummer">
+                                                            <input type="text" class="form-control mb-2 ml-3" id="faxBoxNumber" placeholder="Bus">
+                                                        </div>
+                                                        <input type="text" class="form-control mb-2" id="facPostalCode" placeholder="Postcode">
+                                                        <input type="text" class="form-control mb-2" id="facCity" placeholder="Stad">
                                                         <div class="form-group d-flex">
-                                                            <label for="countrySelect" class="pr-3 pt-1">Land:</label>
-                                                            <select class="form-control" id="countrySelect">
+                                                            <label for="facCountrySelect" class="pr-3 pt-1">Land:</label>
+                                                            <select class="form-control" id="facCountrySelect">
                                                                 <option selected value="1">België</option>
                                                                 <option value="2">Duitsland</option>
                                                                 <option value="3">Frankrijk</option>
@@ -222,8 +227,8 @@
                                             <div class="row">
                                                 <div class="col-12 col-md-6">
                                                     <div class="form-check border-top border-secondary pt-3">
-                                                        <input class="form-check-input" type="checkbox" value="" id="delevery_billingCheck">
-                                                        <label class="form-check-label" for="delevery_billingCheck">
+                                                        <input class="form-check-input" type="checkbox" value="" id="delivery_billingCheck">
+                                                        <label class="form-check-label" for="delivery_billingCheck">
                                                             Mijn leverings- en facturatieadres zijn hetzelfde.
                                                         </label>
                                                     </div>
@@ -244,22 +249,46 @@
                                 <div class="card">
                                     <div class="card-header" id="headingThree">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Stap 3 <span class="">Verzendingsdetails</span>
+                                            <button class="btn btn-link collapsed w-100 d-flex" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <span class="text-secondary">Stap 3</span>
+                                                <span class="text-dark flex-grow-1 text-right">Leveringsgegevens</span>
                                             </button>
                                         </h2>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion_Checkout">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-3 mt-md-0 pb-3">Leveringsadres</h3>
+                                            <form class="">
+                                                <input type="text" class="form-control mb-2 mt-3" id="delFirstName" placeholder="Voornaam">
+                                                <input type="text" class="form-control mb-2" id="delLastName" placeholder="Familienaam">
+                                                <input type="text" class="form-control mb-2" id="delAddress" placeholder="Adres">
+                                                <div class="d-flex">
+                                                    <input type="text" class="form-control mb-2 mr-3" id="delHouseNumber" placeholder="Nummer">
+                                                    <input type="text" class="form-control mb-2 ml-3" id="delBoxNumber" placeholder="Bus">
+                                                </div>
+                                                <input type="text" class="form-control mb-2" id="delPostalCode" placeholder="Postcode">
+                                                <input type="text" class="form-control mb-2" id="delCity" placeholder="Stad">
+                                                <div class="form-group d-flex">
+                                                    <label for="delCountrySelect" class="pr-3 pt-1">Land:</label>
+                                                    <select class="form-control" id="delCountrySelect">
+                                                        <option selected value="1">België</option>
+                                                        <option value="2">Duitsland</option>
+                                                        <option value="3">Frankrijk</option>
+                                                        <option value="4">Luxemburg</option>
+                                                        <option value="5">Nederland</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                            <button class="btn btn-dark text-uppercase" type="submit">ga verder</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingFour">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                Stap 4 <span class="">Verzendingsmethode</span>
+                                            <button class="btn btn-link collapsed w-100 d-flex" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                <span class="text-secondary">Stap 4</span>
+                                                <span class="text-dark flex-grow-1 text-right">Leveringsmethode</span>
                                             </button>
                                         </h2>
                                     </div>
@@ -272,35 +301,164 @@
                                 <div class="card">
                                     <div class="card-header" id="headingFive">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                Stap 5 <span class="">Betalingsmethode</span>
+                                            <button class="btn btn-link collapsed w-100 d-flex" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                <span class="text-secondary">Stap 5 </span>
+                                                <span class="text-dark flex-grow-1 text-right">Betalingsmethode</span>
                                             </button>
                                         </h2>
                                     </div>
                                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion_Checkout">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="payRadios" id="creditCard" value="option1" checked>
+                                                <label class="form-check-label" for="creditCard">
+                                                    Visa/Mastercard
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="payRadios" id="debitcard" value="option2">
+                                                <label class="form-check-label" for="debitCard">
+                                                    Bancontact/Mistercash
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="payRadios" id="directPay" value="option3">
+                                                <label class="form-check-label" for="directPay">
+                                                    Direct Banking
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="payRadios" id="payPal" value="option4">
+                                                <label class="form-check-label" for="payPal">
+                                                    Paypal
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="payRadios" id="transfer" value="option5">
+                                                <label class="form-check-label" for="transfer">
+                                                    Overschrijving
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingSix">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                Stap 6 <span class="">Bevestig order</span>
+                                            <button class="btn btn-link collapsed w-100 d-flex" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                <span class="text-secondary">Stap 6 </span>
+                                                <span class="text-dark flex-grow-1 text-right">Bevestig order</span>
                                             </button>
                                         </h2>
                                     </div>
                                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion_Checkout">
                                         <div class="card-body">
+                                            <div class="row border border-secondary">
+                                            <div class="col-12 d-md-none">
+                                                <h2 class="text-center my-3">Artikelen</h2>
+                                            </div>
+                                            <div class="col-12 d-none d-md-block">
+                                                <div class="row">
+                                                    <div class="col-md-4 pl-3 my-3">
+                                                        <p class="my-auto">Beschrijving</p>
+                                                    </div>
+                                                    <div class="col-md-2 pl-3 my-auto">
+                                                        <p class="my-auto">Zaadjes</p>
+                                                    </div>
+                                                    <div class="col-md-2 pl-0 my-auto">
+                                                        <p class="my-auto">Prijs/Stuk</p>
+                                                    </div>
+                                                    <div class="col-md-2 pl-0 my-auto">
+                                                        <p class="my-auto">Aantal</p>
+                                                    </div>
+                                                    <div class="col-md-2 pl-3 my-auto">
+                                                        <p class="my-auto">Subtotaal</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="row border border-top-0 border-secondary">
+                                                <div class="col-md-4">
+                                                    <h3 class="productName my-3">Tomaat 'Shirley F1 Hybride'</h3>
+                                                </div>
+                                                <div class="col-md-2 my-auto">
+                                                    <p class="seeds mb-1">25 zaadjes</p>
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-1 d-md-none">Prijs : &nbsp;</p>
+                                                    <p class="unitPrice mb-1">€ 5.99</p>
 
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-1 d-md-none">Aantal : &nbsp;</p>
+                                                    <p class="mb-1">1</p>
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-0 d-md-none">Subtotaal : &nbsp;</p>
+                                                    <p class="prijs">€ 5.99</p>
+                                                </div>
+                                            </div>
+                                            <div class="row border border-top-0 border-secondary">
+                                                <div class="col-md-4">
+                                                    <h3 class="productName my-3">Courgette 'Diamant F1'</h3>
+                                                </div>
+                                                <div class="col-md-2 my-auto">
+                                                    <p class="seeds mb-1">25 zaadjes</p>
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-1 d-md-none">Prijs : &nbsp;</p>
+                                                    <p class="unitPrice mb-1">€ 2.50</p>
+
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-1 d-md-none">Aantal : &nbsp;</p>
+                                                    <p class="mb-1">1</p>
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-0 d-md-none">Subtotaal : &nbsp;</p>
+                                                    <p class="prijs">€ 2.50</p>
+                                                </div>
+                                            </div>
+                                            <div class="row border border-top-0 border-secondary">
+                                                <div class="col-md-4">
+                                                    <h3 class="productName my-3">Paprika 'Esmeralda F1'</h3>
+                                                </div>
+                                                <div class="col-md-2 my-auto">
+                                                    <p class="seeds mb-1">25 zaadjes</p>
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-1 d-md-none">Prijs : &nbsp;</p>
+                                                    <p class="unitPrice mb-1">€ 3.99</p>
+
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-1 d-md-none">Aantal : &nbsp;</p>
+                                                    <p class="mb-1">1</p>
+                                                </div>
+                                                <div class="col-md-2 d-flex flex-md-column my-auto">
+                                                    <p class="mb-0 d-md-none">Subtotaal : &nbsp;</p>
+                                                    <p class="prijs">€ 3.99</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row border border-top-0 border-secondary mb-3">
+                                                <div class="col-8 px-0 text-center">
+                                                    <p class="border-bottom border-secondary mb-0 py-2">Subtotaal : </p>
+                                                    <p class="border-bottom border-secondary mb-0 py-2">Verzendingskosten : </p>
+                                                    <p class="border-bottom border-secondary mb-0 py-2">Korting : </p>
+                                                    <p class="mb-0 py-2">Totaal : </p>
+                                                </div>
+                                                <div class="col-4 px-0 border-left border-secondary text-center">
+                                                    <p class="subTotal border-bottom border-secondary mb-0 py-2">€ 12.48</p>
+                                                    <p class="shipCost border-bottom border-secondary mb-0 py-2">€ 7.00</p>
+                                                    <p class="discountVoucher border-bottom border-secondary mb-0 py-2">€ 0.00</p>
+                                                    <p class="Total prijs mb-0 py-2">€ 19.48</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-dark text-uppercase float-right mb-3" type="submit">bevestig order</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -324,7 +482,7 @@
                     <p>Schrijf je in voor de nieuwsbrief:</p>
                     <form class="d-flex flex-row mb-3 border-bottom mb-sm-4 pb-sm-1">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Geef je email in">
+                            <input type="email" class="form-control" id="newsletterEmail1" placeholder="Geef je email in">
                         </div>
                         <button type="submit" class="btn btn-secondary h-75">Verstuur</button>
                     </form>
