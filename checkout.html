@@ -122,55 +122,48 @@
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_Checkout">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-12 col-md-6 d-flex flex-column mb-5">
+                                                <div class="col-12 col-md-6 d-flex flex-column mb-5 mb-md-0">
                                                     <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">nieuwe klant</h3>
                                                     <p>Meld je bij ons aan voor toekomstig gemak:</p>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" id="gastRadios" value="option1" checked>
-                                                        <label class="form-check-label" for="gastRadios">
-                                                            Checkout als Bezoeker
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" id="registreerRadios" value="option2">
-                                                        <label class="form-check-label" for="registreerRadios">
-                                                            Registreer
-                                                        </label>
-                                                    </div>
-                                                    <p class="mt-3 border-bottom border-secondary pb-3">Maak een account aan bij onze winkel en ga vlugger door het checkout proces. Bovendien kan je meerdere leveringsadressen opslaan en je orders bekijken en volgen via je account. </p>
-                                                    <div class="row">
-                                                        <div class="col-6">
+                                                    <form>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" id="gastRadios" value="option1" checked>
+                                                            <label class="form-check-label" for="gastRadios">
+                                                                Checkout als Bezoeker
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" id="registreerRadios" value="option2">
+                                                            <label class="form-check-label" for="registreerRadios">
+                                                                Registreer
+                                                            </label>
+                                                        </div>
+                                                        <p class="mt-3 border-bottom border-secondary pb-3">Maak een account aan bij onze winkel en ga vlugger door het checkout proces. Bovendien kan je meerdere leveringsadressen opslaan en je orders bekijken en volgen via je account. </p>
+                                                        <div>
                                                             <button class="btn btn-dark text-uppercase" type="submit">ga verder</button>
                                                         </div>
-                                                        <div class="col-6">
-
-                                                        </div>
-                                                    </div>
-
+                                                    </form>
                                                 </div>
                                                 <div class="col-12 col-md-6 d-flex flex-column">
                                                     <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">bestaande klant</h3>
                                                     <p>Als je reeds een account hebt bij ons, gelieve dan in te loggen.</p>
-                                                    <form class="border-bottom border-secondary mb-3">
+                                                    <form class="mb-auto">
                                                         <div class="form-group">
                                                             <input type="email" class="form-control" id="loginEmail" placeholder="Vul uw email in">
                                                         </div>
                                                         <div class="form-group">
                                                             <input type="password" class="form-control" id="loginPassword" placeholder="Paswoord">
                                                         </div>
-                                                        <div class="form-group form-check mb-lg-8 mb-xl-3">
+                                                        <div class="form-group form-check">
                                                             <input type="checkbox" class="form-check-input" id="savePass">
                                                             <label class="form-check-label pb-1" for="savePass">Paswoord onthouden</label>
                                                         </div>
-                                                    </form>
-                                                    <div class="row">
-                                                        <div class="col-6">
+                                                        <div class="d-flex border-top border-secondary pt-3">
                                                             <button class="btn btn-secondary text-uppercase" type="submit">inloggen</button>
+                                                            <p class="text-danger flex-fill text-right">Paswoord vergeten?</p>
                                                         </div>
-                                                        <div class="col-6">
-                                                            <p class="text-danger">Paswoord vergeten?</p>
-                                                        </div>
-                                                    </div>
+                                                    </form>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -187,41 +180,38 @@
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_Checkout">
                                         <div class="card-body">
+                                            <form>
                                             <div class="row">
                                                 <div class="col-12 col-md-6">
                                                     <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">Persoonlijke gegevens</h3>
-                                                    <form class="">
-                                                        <input type="text" class="form-control mb-2 mt-3" id="facFirstName" placeholder="Voornaam">
-                                                        <input type="text" class="form-control mb-2" id="facLastName" placeholder="Familienaam">
-                                                        <input type="email" class="form-control mb-2" id="facBillingEmail" placeholder="Email">
-                                                        <input type="tel" class="form-control mb-2" id="facPhoneNumber" placeholder="Telefoonnummer">
-                                                        <input type="text" class="form-control mb-2" id="facCompany" placeholder="Bedrijf">
-                                                        <input type="text" class="form-control mb-2" id="facBtwNumber" placeholder="BTW-nummer">
-                                                        <input type="password" class="form-control mb-2" id="facBillingPassword" placeholder="Paswoord">
-                                                        <input type="password" class="form-control mb-3" id="facBillingPassword2" placeholder="Bevestig je paswoord">
-                                                    </form>
+                                                    <input type="text" class="form-control mb-2 mt-3" id="facFirstName" placeholder="Voornaam">
+                                                    <input type="text" class="form-control mb-2" id="facLastName" placeholder="Familienaam">
+                                                    <input type="email" class="form-control mb-2" id="facBillingEmail" placeholder="Email">
+                                                    <input type="tel" class="form-control mb-2" id="facPhoneNumber" placeholder="Telefoonnummer">
+                                                    <input type="text" class="form-control mb-2" id="facCompany" placeholder="Bedrijf">
+                                                    <input type="text" class="form-control mb-2" id="facBtwNumber" placeholder="BTW-nummer">
+                                                    <input type="password" class="form-control mb-2" id="facBillingPassword" placeholder="Paswoord">
+                                                    <input type="password" class="form-control mb-3" id="facBillingPassword2" placeholder="Bevestig je paswoord">
                                                 </div>
                                                 <div class="col-12 col-md-6">
                                                     <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-3 mt-md-0 pb-3">Facturatieadres</h3>
-                                                    <form class="">
-                                                        <input type="text" class="form-control mb-2 mt-3" id="facAddress" placeholder="Adres">
-                                                        <div class="d-flex">
-                                                            <input type="text" class="form-control mb-2 mr-3" id="facHouseNumber" placeholder="Nummer">
-                                                            <input type="text" class="form-control mb-2 ml-3" id="faxBoxNumber" placeholder="Bus">
-                                                        </div>
-                                                        <input type="text" class="form-control mb-2" id="facPostalCode" placeholder="Postcode">
-                                                        <input type="text" class="form-control mb-2" id="facCity" placeholder="Stad">
-                                                        <div class="form-group d-flex">
-                                                            <label for="facCountrySelect" class="pr-3 pt-1">Land:</label>
-                                                            <select class="form-control" id="facCountrySelect">
-                                                                <option selected value="1">België</option>
-                                                                <option value="2">Duitsland</option>
-                                                                <option value="3">Frankrijk</option>
-                                                                <option value="4">Luxemburg</option>
-                                                                <option value="5">Nederland</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
+                                                    <input type="text" class="form-control mb-2 mt-3" id="facAddress" placeholder="Adres">
+                                                    <div class="d-flex">
+                                                        <input type="text" class="form-control mb-2 mr-3" id="facHouseNumber" placeholder="Nummer">
+                                                        <input type="text" class="form-control mb-2 ml-3" id="facBoxNumber" placeholder="Bus">
+                                                    </div>
+                                                    <input type="text" class="form-control mb-2" id="facPostalCode" placeholder="Postcode">
+                                                    <input type="text" class="form-control mb-2" id="facCity" placeholder="Stad">
+                                                    <div class="form-group d-flex">
+                                                        <label for="facCountrySelect" class="pr-3 pt-1">Land:</label>
+                                                        <select class="form-control" id="facCountrySelect">
+                                                            <option selected value="1">België</option>
+                                                            <option value="2">Duitsland</option>
+                                                            <option value="3">Frankrijk</option>
+                                                            <option value="4">Luxemburg</option>
+                                                            <option value="5">Nederland</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -235,14 +225,15 @@
                                                 </div>
                                                 <div class="col-12 col-md-6">
                                                     <div class="form-check borderAddress py-3">
-                                                        <input class="form-check-input" type="checkbox" value="" id="privacyCheck">
-                                                        <label class="form-check-label" for="privacyCheck">
+                                                        <input class="form-check-input" type="checkbox" value="" id="salesConditionCheck">
+                                                        <label class="form-check-label" for="salesConditionCheck">
                                                             Ik heb de verkoopsvoorwaarden gelezen en goedgekeurd.
                                                         </label>
                                                     </div>
                                                     <button class="btn btn-dark text-uppercase" type="submit">ga verder</button>
                                                 </div>
                                             </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -278,8 +269,8 @@
                                                         <option value="5">Nederland</option>
                                                     </select>
                                                 </div>
+                                                <button class="btn btn-dark text-uppercase" type="submit">ga verder</button>
                                             </form>
-                                            <button class="btn btn-dark text-uppercase" type="submit">ga verder</button>
                                         </div>
                                     </div>
                                 </div>
@@ -294,7 +285,28 @@
                                     </div>
                                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion_Checkout">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-3 mt-md-0 pb-3">Geef een keuze aan</h3>
+                                            <form class="mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="delRadios" id="delPost" value="option1" checked>
+                                                    <label class="form-check-label" for="delPost">
+                                                        Leveren met de post
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="delRadios" id="delPostpunt" value="option2">
+                                                    <label class="form-check-label" for="delPostpunt">
+                                                        Afhalen aan Postpunt
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="delRadios" id="delKiala" value="option3">
+                                                    <label class="form-check-label" for="delKiala">
+                                                        Afhalen aan Kialapunt
+                                                    </label>
+                                                </div>
+                                                <button class="btn btn-dark text-uppercase mt-3" type="submit">ga verder</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -309,36 +321,40 @@
                                     </div>
                                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion_Checkout">
                                         <div class="card-body">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="payRadios" id="creditCard" value="option1" checked>
-                                                <label class="form-check-label" for="creditCard">
-                                                    Visa/Mastercard
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="payRadios" id="debitcard" value="option2">
-                                                <label class="form-check-label" for="debitCard">
-                                                    Bancontact/Mistercash
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="payRadios" id="directPay" value="option3">
-                                                <label class="form-check-label" for="directPay">
-                                                    Direct Banking
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="payRadios" id="payPal" value="option4">
-                                                <label class="form-check-label" for="payPal">
-                                                    Paypal
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="payRadios" id="transfer" value="option5">
-                                                <label class="form-check-label" for="transfer">
-                                                    Overschrijving
-                                                </label>
-                                            </div>
+                                            <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-3 mt-md-0 pb-3">Geef een keuze aan</h3>
+                                            <form class="mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="payRadios" id="creditCard" value="option1" checked>
+                                                    <label class="form-check-label" for="creditCard">
+                                                        Visa/Mastercard
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="payRadios" id="debitcard" value="option2">
+                                                    <label class="form-check-label" for="debitCard">
+                                                        Bancontact/Mistercash
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="payRadios" id="directPay" value="option3">
+                                                    <label class="form-check-label" for="directPay">
+                                                        Direct Banking
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="payRadios" id="payPal" value="option4">
+                                                    <label class="form-check-label" for="payPal">
+                                                        Paypal
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="payRadios" id="transfer" value="option5">
+                                                    <label class="form-check-label" for="transfer">
+                                                        Overschrijving
+                                                    </label>
+                                                </div>
+                                                <button class="btn btn-dark text-uppercase mt-3" type="submit">ga verder</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -455,7 +471,7 @@
                                                     <p class="Total prijs mb-0 py-2">€ 19.48</p>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-dark text-uppercase float-right mb-3" type="submit">bevestig order</button>
+                                            <button class="btn btn-dark text-uppercase float-right mb-3">bevestig order</button>
                                         </div>
                                     </div>
                                 </div>
@@ -508,10 +524,10 @@
                 <div class="row w-100 border-top">
                     <div class="col-12 text-center my-3 d-flex justify-content-center">
                         <ul id="linksFooter">
-                            <li><a href="#" class="text-secondary streepje">Inloggen</a></li>
-                            <li><a href="#" class="text-secondary streepje pl-sm-3">Registreren</a></li>
+                            <li><a href="login.html" class="text-secondary streepje">Inloggen</a></li>
+                            <li><a href="register.html" class="text-secondary streepje pl-sm-3">Registreren</a></li>
                             <li><a href="#" class="text-secondary streepje pl-sm-3">Mijn Account</a></li>
-                            <li><a href="#" class="text-secondary pl-sm-3">Checkout</a></li>
+                            <li><a href="checkout.html" class="text-secondary pl-sm-3">Checkout</a></li>
                         </ul>
                     </div>
                 </div>

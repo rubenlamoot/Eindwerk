@@ -47,7 +47,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Kruiden
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -103,9 +103,60 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Winkelwagen</li>
+                        <li class="breadcrumb-item active" aria-current="page">Registreer Account</li>
                     </ol>
                 </nav>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p>Indien je reeds een account hebt bij ons, gelieve in te loggen via de <a href="login.html">login-pagina</a>.</p>
+                        <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right pb-3">Persoonlijke gegevens</h3>
+                        <form class="">
+                            <input type="text" class="form-control mb-2 mt-3" id="regFirstName" placeholder="Voornaam">
+                            <input type="text" class="form-control mb-2" id="regLastName" placeholder="Familienaam">
+                            <input type="email" class="form-control mb-2" id="regBillingEmail" placeholder="Email">
+                            <input type="tel" class="form-control mb-2" id="regPhoneNumber" placeholder="Telefoonnummer">
+                            <input type="text" class="form-control mb-2" id="regCompany" placeholder="Bedrijf">
+                            <input type="text" class="form-control mb-2" id="regBtwNumber" placeholder="BTW-nummer">
+
+                        <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-5 pb-3">Adres gegevens</h3>
+                            <input type="text" class="form-control mb-2 mt-3" id="regAddress" placeholder="Adres">
+                            <div class="d-flex">
+                                <input type="text" class="form-control mb-2 mr-3" id="regHouseNumber" placeholder="Nummer">
+                                <input type="text" class="form-control mb-2 ml-3" id="regBoxNumber" placeholder="Bus">
+                            </div>
+                            <input type="text" class="form-control mb-2" id="regPostalCode" placeholder="Postcode">
+                            <input type="text" class="form-control mb-2" id="regCity" placeholder="Stad">
+                            <div class="form-group d-flex">
+                                <label for="regCountrySelect" class="pr-3 pt-1">Land:</label>
+                                <select class="form-control" id="regCountrySelect">
+                                    <option selected value="1">België</option>
+                                    <option value="2">Duitsland</option>
+                                    <option value="3">Frankrijk</option>
+                                    <option value="4">Luxemburg</option>
+                                    <option value="5">Nederland</option>
+                                </select>
+                            </div>
+
+                        <h3 class="text-uppercase text-secondary border-bottom border-secondary text-right mt-5 pb-3">Paswoord</h3>
+                            <input type="password" class="form-control mb-2 mt-3" id="regPassword" placeholder="Paswoord">
+                            <input type="password" class="form-control mb-3" id="regPassword2" placeholder="Bevestig je paswoord">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="newsLetterCheck">
+                                <label class="form-check-label" for="newsLetterCheck">
+                                    Ik schrijf me in voor nieuwsbrief.
+                                </label>
+                            </div>
+                            <div class="form-check py-3">
+                                <input class="form-check-input" type="checkbox" value="" id="privacyCheck">
+                                <label class="form-check-label" for="privacyCheck">
+                                    Ik heb het privacybeleid gelezen en goedgekeurd.
+                                </label>
+                            </div>
+                            <button class="btn btn-dark text-uppercase" type="submit">account aanmaken</button>
+                        </form>
+                    </div>
+                </div>
             </main>
             <footer class="row border-bottom m-3">
                 <div class="col-12 col-sm-6 col-lg-3 my-3">

@@ -7850,6 +7850,9 @@ h3 {
 .oogsten {
   background-color: orange; }
 
+#accordion_Checkout .btn-link {
+  text-decoration: none; }
+
 @media (min-width: 576px) {
   h2 {
     font-size: 2rem !important; }
