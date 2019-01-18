@@ -105,7 +105,7 @@ h3{
     height: 100vh;
   }
   .homepic{
-    height: 100vh ;
+    height: 100vh;
   }
   .img-product{
     width: 100%;
@@ -114,7 +114,9 @@ h3{
   .card_product{
     height: 100%;
   }
-
+  #pageNotFound{
+    height: 100vh;
+  }
 }
 
 @include media-breakpoint-up(xl) {

@@ -7901,7 +7901,9 @@ h3 {
     width: 100%;
     height: 100%; }
   .card_product {
-    height: 100%; } }
+    height: 100%; }
+  #pageNotFound {
+    height: 100vh; } }
 
 @media (min-width: 1200px) {
   .card {
