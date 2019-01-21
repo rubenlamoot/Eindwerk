@@ -1,5 +1,8 @@
 //Dit is mijn eigen css bestand
 
+body{
+  font-family: 'Lato', sans-serif;
+}
 .logo{
   font-size: 1.3rem !important;
 }
@@ -74,10 +77,35 @@ h3{
 }
 @include media-breakpoint-up(md) {
 
-  .carousel-caption{
-    top : 50% !important;
-    left: 50% !important;
+  .myCaption{
+    position: absolute;
+    top : 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
+    background: #b2ccb0;
+    opacity: 0.5;
+    z-index: 3;
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+  }
+  .captionText{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    width: 100%;
+    padding: 2%;
+  }
+  .txtMaand{
+    z-index: 10;
+    color: black;
+    font-weight: 700;
+  }
+  .tekstMaand{
+    z-index: 10;
+    color: black;
+    font-weight: 700;
   }
   .fa-chevron-circle-left{
     position: absolute;

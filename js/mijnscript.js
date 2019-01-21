@@ -79,57 +79,62 @@ function vindMaand(maandGetal){
         case 2 :
             str_maand = 'Maart';
             str_src = 'assets/images/maart.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 3 :
             str_maand = 'April';
             str_src = 'assets/images/april.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 4 :
             str_maand = 'Mei';
             str_src = 'assets/images/mei.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 5 :
             str_maand = 'Juni';
             str_src = 'assets/images/juni.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 6 :
             str_maand = 'Juli';
             str_src = 'assets/images/juli.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 7 :
             str_maand = 'Augustus';
             str_src = 'assets/images/augustus.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 8 :
             str_maand = 'September';
             str_src = 'assets/images/september.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 9 :
             str_maand = 'Oktober';
             str_src = 'assets/images/oktober.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 10 :
             str_maand = 'November';
             str_src = 'assets/images/november.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 11 :
             str_maand = 'December';
             str_src = 'assets/images/december.jpg';
-            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam perferendis placeat praesentium quasi quo suscipit temporibus, voluptatum.';
+            str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
     }
     eenArray.push(str_maand);
     eenArray.push(str_src);
     eenArray.push(str_tekst);
     return eenArray;
+}
+
+function goBack()
+{
+    window.history.back()
 }
 
