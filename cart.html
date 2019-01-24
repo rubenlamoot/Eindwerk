@@ -29,38 +29,38 @@
                 <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-column">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="category.html" id="dropdownZaadjes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Zaadjes
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-labelledby="dropdownZaadjes">
                                 <a class="dropdown-item" href="category.html">Groenten</a>
                                 <a class="dropdown-item" href="category.html">Fruit</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="category.html" id="dropdownPlantgoed" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Plantgoed
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-labelledby="dropdownPlantgoed">
                                 <a class="dropdown-item" href="category.html">Aardappelen</a>
                                 <a class="dropdown-item" href="category.html">Uien</a>
                                 <a class="dropdown-item" href="category.html">Look</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownKruiden" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Kruiden
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-labelledby="dropdownKruiden">
                                 <a class="dropdown-item" href="category.html">1-jarigen</a>
                                 <a class="dropdown-item" href="category.html">Doorlevend</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="category.html" id="dropdownAccessoires" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Accessoires
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-labelledby="dropdownAccessoires">
                                 <a class="dropdown-item" href="category.html">Gereedschap</a>
                                 <a class="dropdown-item" href="category.html">Zaaitafels</a>
                                 <a class="dropdown-item" href="category.html">Potgrond en mest</a>
@@ -107,6 +107,8 @@
                         <li class="breadcrumb-item active" aria-current="page">Winkelwagen</li>
                     </ol>
                 </nav>
+
+                <h2 class="text-secondary mb-5">Winkelwagen</h2>
 
                 <section id="shopItems">
                     <div class="row">
@@ -274,7 +276,7 @@
                             <div class="tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane fade show active" id="pill_ship" role="tabpanel" aria-labelledby="pill_ship_tab">
                                     <p class="mt-3 my-sm-0">Geef een bestemming in om de verzendingskosten te berekenen</p>
-                                    <form action="" class="my-3">
+                                    <form class="my-3">
                                          <select class="form-control" id="countries">
                                              <option selected value="1">België</option>
                                              <option value="2">Duitsland</option>
@@ -287,14 +289,14 @@
                                     </form>
                                 </div>
                                 <div class="tab-pane fade" id="pill_discount" role="tabpanel" aria-labelledby="pill_discount_tab">
-                                    <form action="" class="my-3">
+                                    <form class="my-3">
                                         <label for="discount">Geef hier uw kortingscode in</label>
                                         <input type="text" class="form-control" id="discount">
                                         <button class="btn btn-secondary mt-7 to-bottom" type="button">Valideer code</button>
                                     </form>
                                 </div>
                                 <div class="tab-pane fade" id="pill_voucher" role="tabpanel" aria-labelledby="pill_voucher_tab">
-                                    <form action="" class="my-3">
+                                    <form class="my-3">
                                         <label for="voucher">Geef hier uw kadoboncode in</label>
                                         <input type="text" class="form-control" id="voucher">
                                         <button class="btn btn-secondary mt-7 to-bottom" type="button">Valideer code</button>

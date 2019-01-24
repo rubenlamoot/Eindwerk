@@ -11,6 +11,15 @@ body{
   width: 30px;
   line-height: 30px !important;
 }
+.dropdown-menu{
+  border: none;
+  background-color: #f8f9fa;
+
+}
+.navbar, .dropdown-menu{
+  position: static !important;
+  float: none !important;
+}
 .prijs{
   font-size: 1.2rem;
   color: #55cd71 !important;
@@ -21,7 +30,13 @@ body{
 h2{
   font-size: 1.6rem !important;
 }
-h3{
+#categoryList h3{
+  font-size: 1.25rem !important;
+}
+.productName{
+  font-size: 1.25rem !important;
+}
+footer h3{
   font-size: 1.0rem !important;
 }
 #linksFooter{
