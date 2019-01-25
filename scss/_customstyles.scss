@@ -14,7 +14,9 @@ body{
 .dropdown-menu{
   border: none;
   background-color: #f8f9fa;
-
+}
+.tekstMaand, .txtMaand{
+  font-weight: bold;
 }
 .navbar, .dropdown-menu{
   position: static !important;
@@ -38,6 +40,12 @@ h2{
 }
 footer h3{
   font-size: 1.0rem !important;
+}
+#registerAccount h3{
+  font-size: 1.25rem !important;
+}
+#klantGetuigenis h3{
+  font-size: 1.00rem !important;
 }
 #linksFooter{
   list-style-type: none;
@@ -89,6 +97,8 @@ footer h3{
     position: absolute;
     bottom: 0;
   }
+
+
 }
 @include media-breakpoint-up(md) {
 
@@ -98,7 +108,7 @@ footer h3{
     left: 50%;
     transform: translate(-50%,-50%);
     background: #b2ccb0;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: 3;
     border-radius: 50%;
     height:300px;
