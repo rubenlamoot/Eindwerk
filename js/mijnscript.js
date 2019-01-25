@@ -83,12 +83,12 @@ function vindMaand(maandGetal){
             break;
         case 3 :
             str_maand = 'April';
-            str_src = 'assets/images/april.jpg';
+            str_src = 'assets/images/april.JPG';
             str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 4 :
             str_maand = 'Mei';
-            str_src = 'assets/images/mei.jpg';
+            str_src = 'assets/images/mei.JPG';
             str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 5 :
@@ -113,7 +113,7 @@ function vindMaand(maandGetal){
             break;
         case 9 :
             str_maand = 'Oktober';
-            str_src = 'assets/images/oktober.jpg';
+            str_src = 'assets/images/oktober.JPG';
             str_tekst = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores autem consectetur debitis deserunt ea earum eius illum ipsam mollitia natus numquam ...';
             break;
         case 10 :
