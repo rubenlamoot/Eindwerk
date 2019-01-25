@@ -7833,7 +7833,7 @@ body {
 h2 {
   font-size: 1.6rem !important; }
 
-#categoryList h3, .productName, #accordion_Checkout h3, #registerAccount h3 {
+#categoryList h3, .productName, #accordion_Checkout h3, #registerAccount h3, .login {
   font-size: 1.25rem !important; }
 
 footer h3, #klantGetuigenis h3 {
